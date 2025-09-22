@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Adu Portfolio - Embed Version</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #0f1724 0%, #1a2332 100%);
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #06b6d4;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            background: linear-gradient(135deg, #06b6d4, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+        
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        .tag {
+            background: rgba(6, 182, 212, 0.2);
+            color: #06b6d4;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        
+        .section h2 {
+            color: #06b6d4;
+            border-bottom: 2px solid #06b6d4;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #7c3aed;
+        }
+        
+        .project h3 {
+            color: #e2e8f0;
+            margin: 0 0 10px 0;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .contact-card {
+            background: rgba(6, 182, 212, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact-link {
+            color: #06b6d4;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .contact-link:hover {
+            color: #7c3aed;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <img src="https://via.placeholder.com/200x200.png?text=Samuel+Adu" alt="Samuel Adu" class="profile-image">
+            <h1>Samuel Adu</h1>
+            <p class="subtitle">Turning Insight into Impact</p>
+            <p>Finance & Operations leader • Compliance strategist • Data Science professional</p>
+            
+            <div class="tags">
+                <span class="tag">10+ yrs Finance & Ops</span>
+                <span class="tag">ALX Data Science</span>
+                <span class="tag">Compliance & Risk</span>
+            </div>
+        </div>
+        
+        <!-- About Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <p>With over a decade of experience in finance, operations, and business strategy, I specialize in transforming challenges into growth opportunities. My career spans roles in accounting, compliance, operations management, and sustainability, complemented by advanced studies in Data Science with ALX.</p>
+            <p>I am passionate about driving impact through governance, risk management, and data-driven insights.</p>
+        </div>
+        
+        <!-- Core Strengths -->
+        <div class="section">
+            <h2>Core Strengths</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Finance & Operations Leadership</h3>
+                    <p>Proven track record in managing budgets, financial planning, and strategic growth across organisations.</p>
+                </div>
+                <div class="project">
+                    <h3>Governance & Compliance</h3>
+                    <p>Trusted experience in risk management, compliance frameworks, and sustainability programmes.</p>
+                </div>
+                <div class="project">
+                    <h3>Data & Innovation</h3>
+                    <p>Equipped with data science skills to translate insights into practical, scalable business solutions.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Featured Projects -->
+        <div class="section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>ACCA — Africa Regional Business Services</h3>
+                    <p>Strengthened compliance and finance operations across multiple regions.</p>
+                </div>
+                <div class="project">
+                    <h3>GELL Health Program (Wassa Amenfi)</h3>
+                    <p>Improved healthcare access through strategic operations management.</p>
+                </div>
+                <div class="project">
+                    <h3>ALX Data Science Projects</h3>
+                    <p>Developed predictive models and dashboards to support decision-making.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact -->
+        <div class="section">
+            <h2>Let's Connect</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>📧 Email</h3>
+                    <a href="mailto:kwakuadusam@gmail.com" class="contact-link">kwakuadusam@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <h3>💼 LinkedIn</h3>
+                    <a href="#" class="contact-link">Connect on LinkedIn</a>
+                </div>
+                <div class="contact-card">
+                    <h3>🌐 Portfolio</h3>
+                    <a href="https://samuel-adu-portfolio-insight.netlify.app" class="contact-link">View Full Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
