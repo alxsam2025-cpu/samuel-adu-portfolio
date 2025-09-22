@@ -448,6 +448,41 @@
       align-items: center;
       gap: 16px;
       margin-bottom: 24px;
+      position: relative;
+    }
+    
+    .contact-link {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s ease;
+      border-radius: var(--border-radius-md);
+      padding: 8px;
+      margin: -8px;
+    }
+    
+    .contact-link:hover {
+      background: rgba(59, 130, 246, 0.1);
+      transform: translateX(4px);
+    }
+    
+    .contact-arrow {
+      margin-left: auto;
+      color: var(--accent-primary);
+      font-size: 18px;
+      transition: transform 0.3s ease;
+    }
+    
+    .contact-link:hover .contact-arrow {
+      transform: translateX(4px);
+    }
+    
+    .contact-status {
+      margin-left: auto;
+      font-size: 18px;
+    }
+    
+    .contact-info-item {
+      cursor: default;
     }
     
     .contact-icon {
@@ -838,6 +873,12 @@
         transform: scale(0.95);
         transition: transform 0.1s ease;
       }
+      
+      .contact-link:active {
+        transform: scale(0.98) translateX(2px);
+        transition: transform 0.1s ease;
+        background: rgba(59, 130, 246, 0.2);
+      }
     }
   </style>
 </head>
@@ -1098,36 +1139,49 @@
         </div>
         
         <div class="contact-info">
-          <div class="contact-item">
+          <a href="mailto:samuel.adu@aol.com" class="contact-item contact-link">
             <div class="contact-icon">📧</div>
             <div class="contact-details">
               <h4>Email</h4>
               <p>samuel.adu@aol.com</p>
             </div>
-          </div>
+            <div class="contact-arrow">→</div>
+          </a>
           
-          <div class="contact-item">
+          <a href="https://linkedin.com/in/samuel-adu" target="_blank" class="contact-item contact-link">
             <div class="contact-icon">💼</div>
             <div class="contact-details">
               <h4>LinkedIn</h4>
               <p>linkedin.com/in/samuel-adu</p>
             </div>
-          </div>
+            <div class="contact-arrow">→</div>
+          </a>
           
-          <div class="contact-item">
+          <a href="tel:+233000000000" class="contact-item contact-link">
+            <div class="contact-icon">📱</div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p>Click to call</p>
+            </div>
+            <div class="contact-arrow">→</div>
+          </a>
+          
+          <div class="contact-item contact-info-item">
             <div class="contact-icon">📍</div>
             <div class="contact-details">
               <h4>Location</h4>
               <p>Available for Remote Work</p>
             </div>
+            <div class="contact-status">🌍</div>
           </div>
           
-          <div class="contact-item">
+          <div class="contact-item contact-info-item">
             <div class="contact-icon">🌐</div>
             <div class="contact-details">
               <h4>Availability</h4>
               <p>Open for new opportunities</p>
             </div>
+            <div class="contact-status">✅</div>
           </div>
         </div>
       </div>
