@@ -288,6 +288,94 @@
       margin-top: 32px;
     }
 
+    /* PROJECTS SECTION */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 32px;
+      margin-top: 32px;
+    }
+    
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius-lg);
+      padding: 32px;
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .project-card:hover {
+      background: var(--bg-card-hover);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+    
+    .project-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+    .project-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--accent-gradient);
+      border-radius: var(--border-radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+    }
+    
+    .project-category {
+      background: rgba(59, 130, 246, 0.1);
+      color: var(--accent-primary);
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--text-primary);
+      line-height: 1.3;
+    }
+    
+    .project-description {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+    
+    .project-tag {
+      background: var(--bg-primary);
+      color: var(--text-secondary);
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 500;
+      border: 1px solid var(--border-color);
+    }
+
     /* ABOUT SECTION */
     .about-content {
       display: grid;
@@ -482,7 +570,8 @@
         gap: 40px;
       }
       
-      .values-grid {
+      .values-grid,
+      .projects-grid {
         grid-template-columns: 1fr;
         gap: 24px;
       }
@@ -567,7 +656,7 @@
         
         <div class="hero-cta">
           <a href="#about" class="btn btn-primary">Explore My Journey</a>
-          <a href="#contact" class="btn btn-secondary">Connect with Me</a>
+          <a href="#projects" class="btn btn-secondary">View My Projects</a>
         </div>
         
         <div class="hero-tags">
@@ -578,16 +667,16 @@
         </div>
       </div>
       
-      <div class="hero-visual fade-in-up">
-        <div class="profile-container">
-          <div class="profile-image">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=800&fit=crop&crop=face" alt="Samuel Adu - Finance & Operations Leader" />
-          </div>
-          <div class="profile-badge-floating">
-            Samuel Adu — Finance • Ops • Data
+        <div class="hero-visual fade-in-up">
+          <div class="profile-container">
+            <div class="profile-image">
+              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=800&fit=crop&crop=face" alt="Samuel Adu - Finance & Operations Leader" style="object-fit: cover; object-position: center;" />
+            </div>
+            <div class="profile-badge-floating">
+              Samuel Adu — Finance • Ops • Data
+            </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- ABOUT SECTION -->
@@ -610,8 +699,8 @@
           </p>
           
           <div class="about-cta">
-            <a href="#contact" class="btn btn-primary">Let's Work Together</a>
-            <a href="mailto:samuel.adu@example.com" class="btn btn-secondary">Send Email</a>
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary">Let's Work Together</a>
           </div>
         </div>
         
@@ -650,6 +739,120 @@
           <p class="card-description">
             Equipped with advanced data science skills to translate insights into practical, scalable business solutions. Building predictive models and dashboards that drive decision-making.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-description">
+            A showcase of my professional work across finance, operations, data science, and technology solutions.
+          </p>
+        </div>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🏢</div>
+              <div class="project-category">Business Services</div>
+            </div>
+            <h3 class="project-title">ACCA — Africa Regional Business Services</h3>
+            <p class="project-description">
+              Strengthened compliance and finance operations across multiple regions, implementing robust governance frameworks and streamlining financial processes for enhanced operational efficiency.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Compliance</span>
+              <span class="project-tag">Finance Operations</span>
+              <span class="project-tag">Regional Management</span>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🏥</div>
+              <div class="project-category">Healthcare</div>
+            </div>
+            <h3 class="project-title">GELL Health Program (Wassa Amenfi)</h3>
+            <p class="project-description">
+              Improved healthcare access through strategic operations management, optimizing service delivery and implementing sustainable healthcare solutions for community impact.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Healthcare</span>
+              <span class="project-tag">Operations</span>
+              <span class="project-tag">Strategy</span>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">📊</div>
+              <div class="project-category">Data Science</div>
+            </div>
+            <h3 class="project-title">ALX Data Science Projects</h3>
+            <p class="project-description">
+              Developed predictive models and dashboards to support decision-making, utilizing advanced analytics and machine learning techniques to drive business insights and strategic outcomes.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Machine Learning</span>
+              <span class="project-tag">Dashboards</span>
+              <span class="project-tag">Predictive Analytics</span>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🛡️</div>
+              <div class="project-category">Welfare System</div>
+            </div>
+            <h3 class="project-title">PRAWS Welfare System</h3>
+            <p class="project-description">
+              A comprehensive welfare system that controls and manages members' welfare contributions, loans, disbursement and policy implementation. The system seeks to give a complete overview and dashboard for the welfare implementation goals.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">System Development</span>
+              <span class="project-tag">Welfare Management</span>
+              <span class="project-tag">Dashboard</span>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🍽️</div>
+              <div class="project-category">Restaurant Management</div>
+            </div>
+            <h3 class="project-title">Whispers Buzz System</h3>
+            <p class="project-description">
+              A modernized operational infrastructure with a 360 management tools for collaborative and responsive solution for operational excellence functioning for restaurants, pubs and club services that seeks to provide revenue, inventory, auditing, stock management, customer services, accounting and performance management tools.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Operations Management</span>
+              <span class="project-tag">Inventory</span>
+              <span class="project-tag">Performance Analytics</span>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-icon">🛣️</div>
+              <div class="project-category">Infrastructure</div>
+            </div>
+            <h3 class="project-title">Road Pulse Ghana</h3>
+            <p class="project-description">
+              Road Pulse Ghana is a comprehensive road infrastructure monitoring and citizens reporting solution tailored to all 16 regions and 275+ constituencies in Ghana. The platform enables rea-time citizen submissions, an interactive geospatial dashboard for officials, predictive analysis for maintenance and sustainability of the road management.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">GIS Mapping</span>
+              <span class="project-tag">Infrastructure</span>
+              <span class="project-tag">Predictive Maintenance</span>
+            </div>
+          </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="#contact" class="btn btn-primary">Let's Discuss Your Project</a>
         </div>
       </div>
     </section>
